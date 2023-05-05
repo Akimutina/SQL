@@ -31,10 +31,10 @@ public class SQLHelper {
 
     @SneakyThrows
     public static void cleanDatabase(){
-        var connection = getConn();
-        runner.execute("DELETE FROM auth_codes");
-        runner.execute("DELETE FROM card_transactions");
-        runner.execute("DELETE FROM cards");
-        runner.execute("DELETE FROM users");
+        var conn = getConn();
+        runner.execute(conn,"DELETE FROM auth_codes");
+        runner.execute(conn,"DELETE FROM card_transactions");
+        runner.execute(conn,"DELETE FROM cards");
+        runner.execute(conn,"DELETE FROM users");
     }
 }

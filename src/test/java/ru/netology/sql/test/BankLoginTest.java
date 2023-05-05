@@ -13,7 +13,7 @@ import static ru.netology.sql.data.SQLHelper.cleanDatabase;
 public class BankLoginTest {
 
     @AfterAll
-    static void teardown(){
+     static void teardown(){
         cleanDatabase();
     }
 
